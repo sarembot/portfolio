@@ -1,4 +1,5 @@
 "use strict";
+
 // Mitchell Saremba - 2025
 
 import express from "express"; // For handling req/res
@@ -7,7 +8,9 @@ import nodemailer from "nodemailer"; // Allows easy email sending
 import cors from "cors"; // Allows frontend to interact with backend
 import dotenv from "dotenv"; // Loads env variables
 import path from "path"; // Helps manage file paths
+import mongoose from "mongoose";
 import { fileURLToPath } from "url";
+import BlogPost from "./models/blogPost.js";
 
 // Load .env variables
 dotenv.config();
@@ -18,6 +21,15 @@ dotenv.config();
  */
 const app = express();
 
+// MongoDB Connection
+// const dbURI =
+//   "mongodb+srv://msar:tWfclXsi9kQH3mAB@cluster0.inp7k2d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
+// mongoose
+//   .connect(dbURI)
+//   .then(() => console.log("MongoDB Connected"))
+//   .catch((err) => console.log(err));
+
 // Middleware
 app.use(cors()); // Allow cross-origin requests (frontend <--> backend)
 app.use(express.json()); // Parse JSON bodies
@@ -26,7 +38,7 @@ app.use(express.json()); // Parse JSON bodies
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Serve files from frontend
+// // Serve files from frontend
 app.use(express.static(path.join(__dirname, "../portfolio")));
 
 /***
@@ -39,6 +51,18 @@ const transporter = nodemailer.createTransport({
     user: process.env.EMAIL_USER,
     pass: process.env.APP_PASSWORD, // Gmail App Password
   },
+});
+
+/***
+ * Defines a GET API route at /api/blog
+ */
+app.get("/blog", async (req, res) => {
+  try {
+    const posts = await BlogPost.find().sort({ datePosted: -1 });
+    res.json(posts);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
 });
 
 /***
