@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body>
+    <header>
+      <!-- TOP NAVBAR -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home">Island Web Works</a>
+
+          <!-- Move burger inside navbar -->
+          <button class="navbar-toggler" type="button" id="navBurger">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Move sidebar content into a collapsible div inside main navbar -->
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Keep the sidebar separate for mobile -->
+      <nav class="sidebar navbar navbar-dark bg-dark">
+        <div class="container-fluid flex-column align-items-start p-2">
+          <ul class="navbar-nav flex-column w-100">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <hr class="nav-divider" />
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <hr class="nav-divider" />
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <hr class="nav-divider" />
+            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+            <hr class="nav-divider" />
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="w-100">
+            <ul
+              class="d-flex flex-row list-unstyled justify-content-center align-items-center"
+            >
+              <li class="mx-1">
+                <a
+                  href="https://www.linkedin.com/in/mitchellsaremba/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="mx-1">
+                <a href="https://github.com/sarembot" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li class="mx-1">
+                <a href="https://x.com/mitchellsaremba" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+
+    <section id="home" class="min-vh-100 d-flex align-items-center">
+      <div id="heroContainer" class="container text-center">
+        <div id="heroText">
+          <h1 class="display-4">Mitchell Saremba</h1>
+          <p class="lead">Full Stack Developer</p>
+          <p class="mx-5">
+            I build clean, modern, and responsive web applications with a focus
+            on simplicity and performance. Whether it's frontend, backend, or
+            full-stack development, I turn ideas into seamless digital
+            experiences.
+          </p>
+        </div>
+        <a href="#services">
+          <button id="findOutMoreBtn" class="btn btn-primary btn-lg mt-4">
+            Find Out More
+          </button></a
+        >
+        <a href="#contact">
+          <button id="callToActionBtn" class="btn btn-secondary btn-lg mt-4">
+            Get in Touch
+          </button></a
+        >
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="min-vh-100 py-5 bg-offset">
+      <h3 class="text-center text-secondary display-5 my-4">Services</h3>
+      <div class="container">
+        <div class="row">
+          <div
+            id="servicesParagraph"
+            class="col-md-8 px-md-5 d-flex flex-colum"
+          >
+            <div
+              class="container border-secondary-50 border border-1 rounded p-2 shadow-lg mb-3"
+            >
+              <p>
+                We specialize in creating custom websites that are
+                <strong
+                  >modern, responsive, and tailored to your specific
+                  needs</strong
+                >.
+              </p>
+              <p>
+                From new builds and redesigns to e-commerce solutions, I ensure
+                your site is both visually appealing and
+                <strong>user-friendly</strong>.
+              </p>
+              <p>
+                I offer seamless API integrations and manage databases to ensure
+                your site functions efficiently. I also focus on improving your
+                site's performance with
+                <strong>speed optimizations and technical SEO</strong>, helping
+                it load faster and rank better on search engines.
+              </p>
+              <p>
+                Additionally, I provide reliable
+                <strong
+                  >website hosting, deployment, and ongoing maintenance</strong
+                >, keeping your site secure, up-to-date, and running smoothly at
+                all times.
+              </p>
+            </div>
+            <hr class="d-md-none" />
+          </div>
+          <div id="servicesList" class="col-md-4 rounded border-secondary p-2">
+            <h4>Services</h4>
+            <ul
+              class="list-group list-group-flush rounded border border-1 shadow-lg"
+            >
+              <li class="list-group-item bg-offset">
+                <i class="bi bi-code-slash me-2"></i>
+                <span>Custom Website Development</span>
+              </li>
+              <li class="list-group-item bg-offset">
+                <i class="bi bi-phone me-2"></i>
+                <span>Responsive Web Desgin</span>
+              </li>
+              <li class="list-group-item bg-offset">
+                <i class="bi bi-speedometer me-2"></i>
+                <span> Website Redesign & Optimization</span>
+              </li>
+              <li class="list-group-item bg-offset">
+                <i class="fa-brands fa-shopify me-2"></i>
+                <span>E-Commerce Development</span>
+              </li>
+              <li class="list-group-item bg-offset">
+                <i class="bi bi-filetype-json me-2"></i>
+                <span> API Development & Integration</span>
+              </li>
+              <li class="list-group-item bg-offset">
+                <i class="bi bi-database me-2"></i>
+                <span>Database Management</span>
+              </li>
+              <li class="list-group-item bg-offset">
+                <i class="bi bi-google me-2"></i>
+                <span> Technical SEO</span>
+              </li>
+              <li class="list-group-item bg-offset">
+                <i class="bi bi-hdd-stack me-2"></i>
+                <span> Website Hosting & Deployment</span>
+              </li>
+              <li class="list-group-item bg-offset">
+                <i class="fa fa-wrench me-2"></i>
+                <span class=""> Website Maintenance</span>
+              </li>
+            </ul>
+          </div>
+          <div id="servicesBtn" class="d-flex justify-content-center mt-4">
+            <a href="#skills">
+              <button class="btn btn-secondary shadow-sm">
+                Check Out Our Tech Stack
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="min-vh-100 py-5 bg-offset">
+      <h3 class="text-center text-secondary display-5 my-4">Skills</h3>
+      <div class="container">
+        <div class="row">
+          <!-- Skill 1 -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <h3 class="col-12 card-title text-center">
+                    Frontend Development
+                  </h3>
+                </div>
+                <div
+                  class="row d-flex m-1 flex-row bg-light justify-content-evenly align-items-center border border-1 border-secondary-50 bg-white rounded"
+                >
+                  <div
+                    class="col-2 d-flex justify-content-center align-items-center"
+                  >
+                    <i
+                      class="fa-brands fa-js fs-logo rounded-circle p-2 bg-light text-secondary logo-animation-1 border border-2 border-secondary-50"
+                    ></i>
+                  </div>
+
+                  <div class="rounded col-10 p-2 row">
+                    <ul class="col-6 list-group">
+                      <li class="list-group-item">HTML5</li>
+                      <li class="list-group-item">CSS3</li>
+                      <li class="list-group-item">JavaScript</li>
+                    </ul>
+                    <ul class="col-6 list-group">
+                      <li class="list-group-item">
+                        Cross-Browser Compatibility
+                      </li>
+                      <li class="list-group-item">Responsive Design</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 2 -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <h3 class="col-12 card-title text-center">
+                    Backend Development
+                  </h3>
+                </div>
+                <div
+                  class="row d-flex m-1 flex-row bg-light justify-content-evenly align-items-center border border-1 border-secondary-50 bg-white rounded"
+                >
+                  <div
+                    class="col-2 d-flex justify-content-center align-items-center"
+                  >
+                    <i
+                      class="fa-solid fa-database fs-logo rounded-circle p-2 bg-light border border-2 border-secondary-50 text-secondary logo-animation-2"
+                    ></i>
+                  </div>
+
+                  <div class="rounded col-10 p-2">
+                    <ul class="list-group">
+                      <li class="list-group-item">Node.js</li>
+                      <li class="list-group-item">Python (Django)</li>
+                      <li class="list-group-item">MongoDB</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3 -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <h3 class="col-12 card-title text-center">Web Design</h3>
+                </div>
+                <div
+                  class="row d-flex m-1 flex-row bg-light justify-content-evenly align-items-center border border-1 border-secondary-50 bg-white rounded"
+                >
+                  <div
+                    class="col-2 d-flex justify-content-center align-items-center"
+                  >
+                    <i
+                      class="fa-brands fa-linux fs-logo rounded-circle p-2 bg-light text-dark border border-2 border-secondary-50 logo-animation-1"
+                    ></i>
+                  </div>
+
+                  <div class="rounded col-10 p-2 row">
+                    <ul class="col-6 list-group">
+                      <li class="list-group-item">UI/UX Design</li>
+                      <li class="list-group-item">Responsive Webpages</li>
+                      <li class="list-group-item">Mobile-First</li>
+                    </ul>
+                    <ul class="col-6 list-group">
+                      <li class="list-group-item">Wireframing/Prototyping</li>
+                      <li class="list-group-item">Responsive Design</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 4 -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <h3 class="col-12 card-title text-center">CMS</h3>
+                </div>
+                <div
+                  class="row d-flex m-1 flex-row bg-light justify-content-evenly align-items-center border border-1 border-secondary-50 bg-white rounded"
+                >
+                  <div
+                    class="col-2 d-flex justify-content-center align-items-center"
+                  >
+                    <i
+                      class="fa-brands fa-linux fs-logo rounded-circle p-2 bg-light text-dark border border-2 border-secondary-50 logo-animation-1"
+                    ></i>
+                  </div>
+
+                  <div class="rounded col-10 p-2">
+                    <ul class="list-group">
+                      <li class="list-group-item">Wordpress</li>
+                      <li class="list-group-item">Shopify</li>
+                      <li class="list-group-item">Webflow</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="min-vh-100 py-5 bg-offset">
+      <h3 class="text-center text-secondary display-5 my-4">Blog</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Blog 1</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Labore, facere!
+                </p>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Blog 2</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Labore, facere!
+                </p>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Blog 3</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Labore, facere!
+                </p>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Blog 4</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Labore, facere!
+                </p>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="min-vh-100 py-5">
+      <h3 class="text-center text-secondary display-5 my-4">Get in Touch</h3>
+      <div class="container">
+        <p>
+          Reach out about a project idea, general inquiry, or with any questions
+          you may have.
+        </p>
+        <div
+          class="container border border-2 rounded p-0 d-flex justify-content-center"
+        >
+          <form id="contactForm" method="post" action="" class="my-3 w-75">
+            <div class="form-group mb-3">
+              <div class="input-group">
+                <div class="input-group-prepend" id="nameIconDiv">
+                  <span class="input-group-text">
+                    <i id="nameIcon" class="bi-dash-circle fs-5"></i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nameInput"
+                  placeholder="Name"
+                  aria-describedby="basic-addon1"
+                  required
+                />
+              </div>
+              <span id="nameError" class="error-msg"></span>
+            </div>
+            <div class="form-group mb-3">
+              <div class="input-group">
+                <div class="input-group-prepend" id="emailIconDiv">
+                  <span class="input-group-text" id="emailIconSpan">
+                    <i id="emailIcon" class="bi-dash-circle fs-5"></i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="Email"
+                  aria-describedby="basic-addon1"
+                  required
+                />
+              </div>
+              <span id="emailError" class="error-msg"></span>
+            </div>
+            <div class="form-group mb-3">
+              <div class="input-group">
+                <div class="input-group-prepend" id="emailIconDiv">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i id="messageIcon" class="bi-dash-circle fs-5"></i>
+                  </span>
+                </div>
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  id="messageInput"
+                  placeholder="Message"
+                  aria-describedby="basic-addon1"
+                  required
+                ></textarea>
+              </div>
+              <span id="messageError" class="error-msg"></span>
+            </div>
+            <button type="submit" class="btn btn-secondary mb-3" id="formBtn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="w-100">
+        <ul
+          class="d-flex flex-row list-unstyled justify-content-center align-items-center"
+        >
+          <li class="mx-1 bottom-0">
+            <p>&copy; 2025 Mitchell Saremba</p>
+          </li>
+          <li class="mx-1">
+            <a
+              href="https://www.linkedin.com/in/mitchellsaremba/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="mx-1">
+            <a href="https://github.com/sarembot" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li class="mx-1">
+            <a href="https://x.com/mitchellsaremba" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="includes/js/script.js"></script>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
