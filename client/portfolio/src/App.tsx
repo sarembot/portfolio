@@ -1,113 +1,36 @@
 // import { useState } from 'react'
-import "./index.css";
+import './index.css';
+import Header from './components/layout/Header';
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <header>
-        {/* Navigation */}
-        <nav>
-          <a href="#home">Island Web Works</a>
-          <button id="navBurger">
-            <span></span>
-          </button>
-          <div id="navMenu">
-            <ul>
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#services">Services</a>
-              </li>
-              <li>
-                <a href="#skills">Skills</a>
-              </li>
-              <li>
-                <a href="#blog">Blog</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        {/* Mobile Sidebar */}
-        <nav id="sidebar">
-          <div>
-            <ul>
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <hr />
-              <li>
-                <a href="#services">Services</a>
-              </li>
-              <hr />
-              <li>
-                <a href="#skills">Skills</a>
-              </li>
-              <hr />
-              <li>
-                <a href="#blog">Blog</a>
-              </li>
-              <hr />
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-            <div>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/mitchellsaremba/"
-                    target="_blank"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/sarembot" target="_blank">
-                    GitHub
-                  </a>
-                </li>
-                <li>
-                  <a href="https://x.com/mitchellsaremba" target="_blank">
-                    Twitter
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-
+      <Header />
       {/* HOME */}
-      <section id="home">
+      <section id='home'>
         <div>
           <div>
             <h1>Mitchell Saremba</h1>
             <p>Full Stack Developer</p>
           </div>
           <p>
-            I build clean, modern, and responsive web applications with a focus
-            on simplicity and performance. Whether it's frontend, backend, or
-            full-stack development, I turn ideas into seamless digital
-            experiences.
+            I build clean, modern, and responsive web applications with a focus on simplicity and
+            performance. Whether it's frontend, backend, or full-stack development, I turn ideas
+            into seamless digital experiences.
           </p>
-          <a href="#services">
-            <button id="findOutMoreBtn">Find Out More</button>
+          <a href='#services'>
+            <button id='findOutMoreBtn'>Find Out More</button>
           </a>
-          <a href="#contact">
-            <button id="callToActionBtn">Get in Touch</button>
+          <a href='#contact'>
+            <button id='callToActionBtn'>Get in Touch</button>
           </a>
         </div>
       </section>
 
       {/* SERVICES */}
-      <section id="services">
+      <section id='services'>
         <h3>Our Services</h3>
         <div>
           {/* Service Cards */}
@@ -135,58 +58,58 @@ function App() {
       </section>
 
       {/* PORTFOLIO */}
-      <section id="portfolio" className="min-vh-100 py-5 bg-offset">
-        <h3 className="text-center text-secondary display-5 my-4">Portfolio</h3>
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-md-6 col-lg-4 my-2">
-              <div className="card">
+      <section id='portfolio' className='min-vh-100 py-5 bg-offset'>
+        <h3 className='text-center text-secondary display-5 my-4'>Portfolio</h3>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12 col-md-6 col-lg-4 my-2'>
+              <div className='card'>
                 <div>
                   <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp"
-                    className="img-fluid"
+                    src='https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp'
+                    className='img-fluid'
                   />
-                  <a href="#!">
+                  <a href='#!'>
                     <div
-                      className="mask"
-                      style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}
+                      className='mask'
+                      style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
                     ></div>
                   </a>
                 </div>
-                <div className="card-body">
-                  <h5 className="card-title">Violette Apothecaries</h5>
-                  <p className="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                <div className='card-body'>
+                  <h5 className='card-title'>Violette Apothecaries</h5>
+                  <p className='card-text'>
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
                   </p>
-                  <a href="#!" className="btn btn-primary">
+                  <a href='#!' className='btn btn-primary'>
                     Button
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="col-12 col-md-6 col-lg-4 my-2">
-              <div className="card">
-                <div className="bg-image hover-overlay">
+            <div className='col-12 col-md-6 col-lg-4 my-2'>
+              <div className='card'>
+                <div className='bg-image hover-overlay'>
                   <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp"
-                    className="img-fluid"
+                    src='https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp'
+                    className='img-fluid'
                   />
-                  <a href="#!">
+                  <a href='#!'>
                     <div
-                      className="mask"
-                      style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}
+                      className='mask'
+                      style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}
                     ></div>
                   </a>
                 </div>
-                <div className="card-body">
-                  <h5 className="card-title">Violette Apothecaries</h5>
-                  <p className="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                <div className='card-body'>
+                  <h5 className='card-title'>Violette Apothecaries</h5>
+                  <p className='card-text'>
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
                   </p>
-                  <a href="#!" className="btn btn-primary">
+                  <a href='#!' className='btn btn-primary'>
                     Button
                   </a>
                 </div>
@@ -197,7 +120,7 @@ function App() {
       </section>
 
       {/* SKILLS */}
-      <section id="skills">
+      <section id='skills'>
         <h3>Skills</h3>
         <div>
           {/* Skill Cards */}
@@ -232,53 +155,49 @@ function App() {
       </section>
 
       {/* BLOG */}
-      <section id="blog" className="min-vh-100 py-5 bg-offset">
-        <h3 className="text-center text-secondary display-5 my-4">Blog</h3>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 mb-4">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">Blog 1</h3>
-                  <p className="card-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Labore, facere!
+      <section id='blog' className='min-vh-100 py-5 bg-offset'>
+        <h3 className='text-center text-secondary display-5 my-4'>Blog</h3>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-md-6 mb-4'>
+              <div className='card'>
+                <div className='card-body'>
+                  <h3 className='card-title'>Blog 1</h3>
+                  <p className='card-text'>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, facere!
                   </p>
                   <span>Lorem ipsum dolor sit amet.</span>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 mb-4">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">Blog 2</h3>
-                  <p className="card-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Labore, facere!
+            <div className='col-md-6 mb-4'>
+              <div className='card'>
+                <div className='card-body'>
+                  <h3 className='card-title'>Blog 2</h3>
+                  <p className='card-text'>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, facere!
                   </p>
                   <span>Lorem ipsum dolor sit amet.</span>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 mb-4">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">Blog 3</h3>
-                  <p className="card-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Labore, facere!
+            <div className='col-md-6 mb-4'>
+              <div className='card'>
+                <div className='card-body'>
+                  <h3 className='card-title'>Blog 3</h3>
+                  <p className='card-text'>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, facere!
                   </p>
                   <span>Lorem ipsum dolor sit amet.</span>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 mb-4">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">Blog 4</h3>
-                  <p className="card-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Labore, facere!
+            <div className='col-md-6 mb-4'>
+              <div className='card'>
+                <div className='card-body'>
+                  <h3 className='card-title'>Blog 4</h3>
+                  <p className='card-text'>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, facere!
                   </p>
                   <span>Lorem ipsum dolor sit amet.</span>
                 </div>
@@ -289,36 +208,30 @@ function App() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact">
+      <section id='contact'>
         <h3>Get in Touch</h3>
         <div>
           <p>
-            Reach out about a project idea, general inquiry, or with any
-            questions you may have.
+            Reach out about a project idea, general inquiry, or with any questions you may have.
           </p>
           <div>
-            <form id="contactForm" method="post" action="">
+            <form id='contactForm' method='post' action=''>
               <div>
                 <div>
                   <div>
                     <span>
-                      <i id="nameIcon"></i>
+                      <i id='nameIcon'></i>
                     </span>
                   </div>
-                  <input
-                    type="text"
-                    id="nameInput"
-                    placeholder="Name"
-                    required
-                  />
+                  <input type='text' id='nameInput' placeholder='Name' required />
                 </div>
-                <span id="nameError"></span>
+                <span id='nameError'></span>
               </div>
 
               {/* Similar structure for email and message inputs */}
               {/* ... */}
 
-              <button type="submit" id="formBtn">
+              <button type='submit' id='formBtn'>
                 Submit
               </button>
             </form>
@@ -333,20 +246,17 @@ function App() {
               <p>&copy; 2025 Mitchell Saremba</p>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/mitchellsaremba/"
-                target="_blank"
-              >
+              <a href='https://www.linkedin.com/in/mitchellsaremba/' target='_blank'>
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://github.com/sarembot" target="_blank">
+              <a href='https://github.com/sarembot' target='_blank'>
                 GitHub
               </a>
             </li>
             <li>
-              <a href="https://x.com/mitchellsaremba" target="_blank">
+              <a href='https://x.com/mitchellsaremba' target='_blank'>
                 Twitter
               </a>
             </li>
