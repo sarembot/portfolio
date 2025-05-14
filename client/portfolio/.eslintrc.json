@@ -1,0 +1,49 @@
+{
+  // Specify environments - where the code will run
+  "env": {
+    "browser": true, // Enable browser globals (window, document, etc)
+    "es2021": true // Enable ES2021 globals and syntax
+  },
+
+  // Extend from popular configs and plugins
+  "extends": [
+    "eslint:recommended", // ESLint's recommended rules
+    "plugin:@typescript-eslint/recommended", // TypeScript-specific rules
+    "plugin:react/recommended", // React-specific rules
+    "plugin:react-hooks/recommended", // Rules for React Hooks
+    "plugin:prettier/recommended" // Prettier integration (must be last)
+  ],
+
+  // Configure the TypeScript parser
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true // Enable JSX parsing
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+
+  // Active plugins that provide additional rules
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+
+  // Customize individual rules
+  "rules": {
+    // Disable requiring React in scope - not needed in React 17+
+    "react/react-in-jsx-scope": "off",
+
+    // Enforce Prettier formatting as ESLint errors
+    "prettier/prettier": "error",
+
+    // Prevent unused variables (TypeScript handles this better)
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"]
+  },
+
+  // Additional settings
+  "settings": {
+    "react": {
+      "version": "detect" // Automatically detect React version
+    }
+  }
+}
