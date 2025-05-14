@@ -8,7 +8,7 @@
 
 - [x] Initialize React + TypeScript project with Vite
 - [x] Set up Tailwind CSS
-- [ ] Configure ESLint and Prettier
+- [x] Configure ESLint and Prettier
 - [ ] Set up Git repository with branching strategy
 - [ ] Create initial project structure
 
