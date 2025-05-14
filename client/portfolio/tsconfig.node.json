@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    // Where to store build information for faster subsequent builds
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+
+    // Target modern JavaScript features
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+
+    // Skip type checking of node_modules to improve performance
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    // Tell TypeScript how to resolve modules (Vite uses 'bundler')
+    "moduleResolution": "bundler",
+    // Use explicit imports/exports syntax
+    "verbatimModuleSyntax": true,
+    // Always treat files as modules
+    "moduleDetection": "force",
+
+    /* Linting */
+    // Enable all strict type checking options
+    "strict": true,
+    // Error on unused variables and parameters
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    // Prevent falling through switch cases without break
+    "noFallthroughCasesInSwitch": true,
+    // Ensure imports with side effects are handled correctly
+    "noUncheckedSideEffectImports": true,
+    // Enable project references (required when other configs reference this one)
+    "composite": true
+  },
+  // Only include Vite config in this specific tsconfig
+  "include": ["vite.config.ts"]
+}

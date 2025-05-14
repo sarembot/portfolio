@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    // Strict mode
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+
+    // Modules
+    "target": "ES2020", // JS output version
+    "jsx": "react-jsx", // JSX code generation
+    "module": "ESNext", // Use modern JS modules
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Include browser/modern JS features
+    "moduleResolution": "bundler", // How to find modules
+
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true, // Let vite handle the compilation (instead of TS)
+    "skipLibCheck": true
+  },
+
+  "incldue": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
