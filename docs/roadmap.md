@@ -6,7 +6,7 @@
 
 ### Setup & Configuration
 
-- [ ] Initialize React + TypeScript project with Vite
+- [✅] Initialize React + TypeScript project with Vite
 - [ ] Set up Tailwind CSS
 - [ ] Configure ESLint and Prettier
 - [ ] Set up Git repository with branching strategy
