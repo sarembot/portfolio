@@ -18,22 +18,24 @@ export default function Hero() {
           digital experiences.
         </p>
       </article>
-      <a href='#services' className='w-full'>
-        <button
-          id='findOutMoreBtn'
-          className='w-full bg-slate-700 hover:bg-slate-500 hover:cursor-pointer rounded-md px-4 py-2 mx-auto my-0 text-white font-bold'
-        >
-          Find Out More
-        </button>
-      </a>
-      <a href='#contact' className='w-full'>
-        <button
-          id='callToActionBtn'
-          className='w-full bg-indigo-500 hover:bg-indigo-600 hover:cursor-pointer rounded-md px-4 py-2 mx-auto my-0 text-white font-bold'
-        >
-          Get in Touch
-        </button>
-      </a>
+      <div className='flex flex-col gap-2 w-full'>
+        <a href='#services' className='w-full'>
+          <button
+            id='findOutMoreBtn'
+            className='w-full bg-slate-700 hover:bg-slate-500 hover:cursor-pointer rounded-md px-4 py-2 mx-auto my-0 text-white font-bold'
+          >
+            Find Out More
+          </button>
+        </a>
+        <a href='#contact' className='w-full'>
+          <button
+            id='callToActionBtn'
+            className='w-full bg-indigo-500 hover:bg-indigo-600 hover:cursor-pointer rounded-md px-4 py-2 mx-auto my-0 text-white font-bold'
+          >
+            Get in Touch
+          </button>
+        </a>
+      </div>
     </section>
   );
 }
