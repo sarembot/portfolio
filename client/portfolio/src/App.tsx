@@ -2,15 +2,21 @@
 import './index.css';
 import Header from './components/layout/Header';
 import Hero from './components/sections/Hero';
-function App() {
-  // const [count, setCount] = useState(0)
+import Footer from './components/layout/Footer';
 
+function App() {
   return (
     <div className='bg-slate-100 dark:bg-slate-900'>
       <Header />
       <main className='max-w-4xl mx-auto p-4'>
         <Hero />
+        {/* <Services /> */}
+        {/* <Portfolio /> */}
+        {/* <Skills /> */}
+        {/* <Blog /> */}
+        {/* <Contact /> */}
       </main>
+      <Footer />
 
       {/* SERVICES */}
       <section id='services'>
@@ -221,31 +227,6 @@ function App() {
           </div>
         </div>
       </section>
-
-      <footer>
-        <div>
-          <ul>
-            <li>
-              <p>&copy; 2025 Mitchell Saremba</p>
-            </li>
-            <li>
-              <a href='https://www.linkedin.com/in/mitchellsaremba/' target='_blank'>
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href='https://github.com/sarembot' target='_blank'>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href='https://x.com/mitchellsaremba' target='_blank'>
-                Twitter
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
     </div>
   );
 }
