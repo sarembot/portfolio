@@ -160,6 +160,70 @@ You are a **senior engineer and mentor** guiding me through building my develope
 
 ---
 
+## 🔨 React Component Conventions
+
+### Naming & Structure
+
+- Use PascalCase for components: `Navbar.tsx`, `ProjectCard.tsx`
+- Use camelCase for:
+  - Utilities: `formatDate.ts`
+  - Hooks: `useWindowSize.ts`
+  - Non-component files: `types.ts`
+- Create index.tsx files for cleaner imports
+
+### File Organization
+
+```typescript
+// ✅ Good component structure
+components/
+  └── Navbar/
+      ├── index.tsx      // Export file
+      ├── Navbar.tsx     // Main component
+      ├── NavItem.tsx    // Sub-component
+      └── styles.ts      // Component styles
+```
+
+### Component Patterns
+
+- One component per file
+- Export components as named exports:
+
+  ```typescript
+  // ✅ Good
+  export function Navbar() {}
+
+  // ❌ Avoid
+  export default function () {}
+  ```
+
+- Define prop interfaces above component:
+
+  ```typescript
+  interface NavbarProps {
+    title: string;
+    isFixed?: boolean;
+  }
+
+  export function Navbar({ title, isFixed = false }: NavbarProps) {}
+  ```
+
+### Component Hierarchy
+
+- Break UI into logical components
+- Keep components focused and single-purpose
+- Lift shared state to common parent
+- Pass data down through props
+- Pass events up through callbacks
+
+### File Naming
+
+- Component file matches component name: `Button.tsx` for `Button` component
+- Test files end with `.test.tsx`: `Button.test.tsx`
+- Style files end with `.styles.ts`: `Button.styles.ts`
+- Type files end with `.types.ts`: `Button.types.ts`
+
+---
+
 ## ✅ Success Criteria
 
 You've succeeded if:
