@@ -14,8 +14,8 @@
 
 ### Basic Components
 
-- [ ] Create layout components (Header, Footer)
-- [ ] Implement basic navigation structure
+- [x] Create layout components (Header, Footer)
+- [x] Implement basic navigation structure
 - [ ] Set up routing with React Router
 - [ ] Create placeholder sections for all main components
 
